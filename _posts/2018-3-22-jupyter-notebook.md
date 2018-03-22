@@ -1,14 +1,16 @@
 ---
 layout: post
-title:  "0基础包教会|数据分析环境搭建：jupyter配置python & r kernel"
+title:  "0基础包教会|数据分析环境搭建：jupyter 配置 python & R kernel"
 author: "actcwlf"
 intro: "一个简便易用的数据分析环境"
 ---
 
 ## 前言
-作为一个没有妹子的单身狗，旺盛的精力无处宣泄着实可惜，于是便走上了折腾各种工具的不归路。作为拍脑袋的结果，数据分析是我认为最为适宜的方向。
+作为一个没有妹子的单身狗，旺盛的精力无处宣泄着实可惜，于是便走上了折腾各种工具的不归路。作为拍脑袋的结果，数据分析是我认为比较适宜的方向。
+
 我当前主要计划分享一些在数据分析相关的工具上踩过的坑，希望能对诸位读者有所助益。由于学识和眼界都有限，不免会有疏漏不妥之处，欢迎各位读者批评指正。
-第一篇为当前（我亲自认证(/▽＼)）最为便利的数据分析环境Jupyter Notebook的环境搭建指南，面向0基础群众。
+第一篇为当前（我亲自认证(/▽＼)）最为便利的数据分析环境 Jupyter Notebook 的环境搭建指南，面向0基础群众。
+
 ## 目录（\*部分选读，不影响主要内容）
 1. 简介
 2. 准备软件包及安装
@@ -43,15 +45,15 @@ intro: "一个简便易用的数据分析环境"
 
 2. 下载[R](https://mirrors.tuna.tsinghua.edu.cn/CRAN/) （根据系统选择相应版本）
 
-3. 安装Anaconda，推荐默认配置安装。注意这个路径，自定义与否随意，不过这里要记录下来最终使用的路径。
+3. 安装Anaconda，推荐默认配置安装。注意这个路径，自定义与否随意，不过这里要记录下来最终使用的路径
 
 ![anaconda-install](/assets/img/2018-03-22-jupyter-notebook/anaconda-install.PNG)
 
-找到Jupyter Notebook，启动之
+找到Jupyter Notebook，启动之，稍作等待浏览器页面会自动弹出
 
 ![j1](/assets/img/2018-03-22-jupyter-notebook/jupyter-1st.PNG)
 
-出现这个界面表明运行成功
+出现这个界面表明运行成功。
 
 4. 安装R，同样注意这里的路径
 
@@ -61,7 +63,7 @@ intro: "一个简便易用的数据分析环境"
 
 ![r1](/assets/img/2018-03-22-jupyter-notebook/r-1st.PNG)
 
-安装就全部完成了
+安装就全部完成了。
 
 ## 配置
 
@@ -77,8 +79,7 @@ intro: "一个简便易用的数据分析环境"
 
 2. 安装R kernel
 
-jupyter可以支持很多种语言，借助的就是所谓内核（Kernel）的概念，简单理解就是只要安装了某语言的内核，
-就可以在jn中使用这种语言（想想都有些小激动），具体的支持列表在[这里](https://github.com/jupyter/jupyter/wiki/Jupyter-kernels)。
+jupyter 可以支持很多种语言，借助的就是所谓内核（Kernel）的概念，简单理解就是只要安装了某语言的内核，就可以在 jn 中使用这种语言（想想都有些小激动），具体的支持列表在[这里](https://github.com/jupyter/jupyter/wiki/Jupyter-kernels)。
 
 具体到R，步骤如下
 
@@ -95,7 +96,7 @@ jupyter可以支持很多种语言，借助的就是所谓内核（Kernel）的�
 cd /d D:\R-language\bin
 r
 ```
-cd 是切换路径(change directory)，`/d`选项切换盘符，在同一盘符下可以省略，之后就是具体的目标路径；后面为启动r解释器。
+cd 是切换路径(change directory)，`/d`选项切换盘符，在同一盘符下可以省略，之后就是具体的目标路径（即前文安装路径下的bin文件夹）；后面为启动r解释器。
 
 ![r-2](/assets/img/2018-03-22-jupyter-notebook/r-2.PNG)
 
@@ -144,13 +145,13 @@ jupyter notebook --generate-config
 
 ## 包管理
 
-anaconda本身已经包含了许多应用于python的科学计算库，通常直接上手使用即可。如果恰好用到尚未安装的包，可以直接在anaconda prompt中进行管理，使用`conda install package`即可安装
+anaconda本身已经包含了许多应用于python的科学计算库，通常直接上手使用即可。如果恰好用到尚未安装的包，可以直接在anaconda prompt中进行管理，使用`conda install package`即可安装。
 
 例如安装scipy
 ```
 conda install scipy
 ```
-更多用法，可参阅[这里](http://www.jianshu.com/p/2f3be7781451)
+更多用法，可参阅[这里](http://www.jianshu.com/p/2f3be7781451)。
 
 对于在conda中没有的包，也可以使用pip进行安装。
 
@@ -158,40 +159,40 @@ conda install scipy
 
 ## 进一步了解\*
 
-[IPython](http://ipython.org/)
+* [IPython](http://ipython.org/)
 
 >IPython provides a rich architecture for interactive computing with:
-
-* A powerful interactive shell.
-* A kernel for Jupyter.
-* Support for interactive data visualization and use of GUI toolkits.
-* Flexible, embeddable interpreters to load into your own projects.
-* Easy to use, high performance tools for parallel computing.
+>
+>* A powerful interactive shell.
+>* A kernel for Jupyter.
+>* Support for interactive data visualization and use of GUI toolkits.
+>* Flexible, embeddable interpreters to load into your own projects.
+>* Easy to use, high performance tools for parallel computing.
 
 简而言之，Ipython提供了一个交互式的python界面，而这种交互方式尤其适用于科学计算
 
-IPython 与 Jupyter
+* IPython 与 Jupyter
 
 这两者中最先出现的是IPython，随着IPython的发展，其中逐渐增添了一些不仅仅局限于Python语言的组件，例如Notebook etc.
 这些组件可以应用到各种语言（例如R）中，因此在IPython 4.0版本，这些组件形成了一个新的项目，即Jupyter，IPython则专注于
 交互式的Python界面，以及作为Jupyter的一个内核。
 
-了解更多，可参考IPython主页和[这里](http://www.sohu.com/a/161922708_633700)
+了解更多，可参考IPython主页和[这里](http://www.sohu.com/a/161922708_633700)。
 
-anaconda 与 conda
+* anaconda 与 conda
 
-conda 是一个包、依赖和环境管理器，适用于多种语言，其扮演的角色和类似pip于python，npm于javascript，但功能更为强大和全面。详细了解可参阅[这里](https://conda.io/docs/index.html)
+conda 是一个包、依赖和环境管理器，适用于多种语言，其扮演的角色和类似pip于python，npm于javascript，但功能更为强大和全面。详细了解可参阅[这里](https://conda.io/docs/index.html)。
 
-anaconda则是以conda作为包管理器，包含了诸多常用python科学计算库的Python发行版，详细了解可参阅[这里](https://www.continuum.io/)
+anaconda则是以conda作为包管理器，包含了诸多常用python科学计算库的Python发行版，详细了解可参阅[这里](https://www.continuum.io/)。
 
 ## 美化\*
-细心的读者会发现，每次在启动Jupyter Notebook的时候，总是会弹出命令行的界面，这实际上这是启动了一个本地的 Web server，Jupyter就运行在这个Web server上，
-浏览器通过访问这个本地的 web server (localhost:8888)就会以网页形式显示出Jupyter的界面，这意味着我们可以利用.css任意自定义Jupyter的界面。
+细心的读者会发现，每次在启动 Jupyter Notebook 的时候，总是会弹出命令行的界面，这实际上这是启动了一个本地的 Web server，Jupyter 就运行在这个 Web server上，
+浏览器通过访问这个本地的 web server (localhost:8888)就会以网页形式显示出 Jupyter 的界面，这意味着我们可以利用 css 任意自定义 Jupyter 的界面（也意味着关掉这个窗口 jn 就挂掉了）。
 了解网页开发的同学现在就可以动手了(～￣▽￣)～
 
-当然这里不可能让读者再去学网页开发，现在要介绍一款别人造好的轮子[jupyter-themes](https://github.com/dunovank/jupyter-themes)
+当然这里不可能让读者再去学网页开发，现在要介绍一款别人造好的轮子 [jupyter-themes](https://github.com/dunovank/jupyter-themes)。
 
-在anaconda prompt中使用pip进行安装
+在anaconda prompt中使用pip进行安装（建议不要使用升级安装）
 ```
 # install/upgrade to latest version
 pip install jupyterthemes

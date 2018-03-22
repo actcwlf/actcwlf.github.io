@@ -2,6 +2,7 @@
 layout: post
 title:  "0基础包教会|数据分析环境搭建：jupyter配置python & r kernel"
 author: "actcwlf"
+intro: "一个简便易用的数据分析环境"
 ---
 
 ## 前言

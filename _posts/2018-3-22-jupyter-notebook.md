@@ -161,13 +161,13 @@ conda install scipy
 
 * [IPython](http://ipython.org/)
 
->IPython provides a rich architecture for interactive computing with:
->
->* A powerful interactive shell.
->* A kernel for Jupyter.
->* Support for interactive data visualization and use of GUI toolkits.
->* Flexible, embeddable interpreters to load into your own projects.
->* Easy to use, high performance tools for parallel computing.
+> IPython provides a rich architecture for interactive computing with:
+> 
+> * A powerful interactive shell.
+> * A kernel for Jupyter.
+> * Support for interactive data visualization and use of GUI toolkits.
+> * Flexible, embeddable interpreters to load into your own projects.
+> * Easy to use, high performance tools for parallel computing.
 
 简而言之，Ipython提供了一个交互式的python界面，而这种交互方式尤其适用于科学计算
 

@@ -44,21 +44,21 @@ author: "actcwlf"
 
 3. 安装Anaconda，推荐默认配置安装。注意这个路径，自定义与否随意，不过这里要记录下来最终使用的路径。
 
-![anaconda-install](anaconda-install.PNG)
+![anaconda-install](/assets/img/2018-03-22-jupyter-notebook/anaconda-install.PNG)
 
 找到Jupyter Notebook，启动之
 
-![j1](jupyter-1st.PNG)
+![j1](/assets/img/2018-03-22-jupyter-notebook/jupyter-1st.PNG)
 
 出现这个界面表明运行成功
 
 4. 安装R，同样注意这里的路径
 
-![r-install](r-install.PNG)
+![r-install](/assets/img/2018-03-22-jupyter-notebook/r-install.PNG)
 
 找到上述路径下的\bin\r.exe，运行
 
-![r1](r-1st.PNG)
+![r1](/assets/img/2018-03-22-jupyter-notebook/r-1st.PNG)
 
 安装就全部完成了
 
@@ -70,7 +70,7 @@ author: "actcwlf"
 
 首先找到jupyter notebook的快捷方式，复制一份命名为jn，右键找到属性
 
-![j2](jn-2nd.PNG)
+![j2](/assets/img/2018-03-22-jupyter-notebook/jn-2nd.PNG)
 
 在标黄的“目标”最后面添加你想要的路径，不带引号，应用即可。注意下面一栏可以修改，也可以留空，实测没有什么影响。
 
@@ -83,7 +83,7 @@ jupyter可以支持很多种语言，借助的就是所谓内核（Kernel）的�
 
 打开anaconda prompt
 
-![ap](ap.PNG)
+![ap](/assets/img/2018-03-22-jupyter-notebook/ap.PNG)
 
 是这个样子的
 
@@ -96,7 +96,7 @@ r
 ```
 cd 是切换路径(change directory)，`/d`选项切换盘符，在同一盘符下可以省略，之后就是具体的目标路径；后面为启动r解释器。
 
-![r-2](r-2.PNG)
+![r-2](/assets/img/2018-03-22-jupyter-notebook/r-2.PNG)
 
 在这里输入
 ```
@@ -111,7 +111,7 @@ IRkernel::installspec()
 ```
 使得IRKernel在jupyter中生效
 
-![j2](j3.PNG)
+![j2](/assets/img/2018-03-22-jupyter-notebook/j3.PNG)
 
 完美！
 
@@ -137,7 +137,7 @@ jupyter notebook --generate-config
 ```
 在NotebookApp增加你的配置文件，比如我的是
 
-![conf](conf.PNG)
+![conf](/assets/img/2018-03-22-jupyter-notebook/conf.PNG)
 
 具体可以自定义的项就在这个.py文件里，读者可以自己发掘
 
@@ -218,4 +218,4 @@ jt -t onedork -f roboto -fs 12
 ```
 
 ## 最终成果
-![f](f.PNG)
+![f](/assets/img/2018-03-22-jupyter-notebook/f.PNG)
